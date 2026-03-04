@@ -1,0 +1,36 @@
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chat-panel-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-placeholder);
+}
+
+.chat-panel-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.chat-panel-empty-text {
+  font-size: 15px;
+}
+
+.chat-area {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.input-area {
+  border-top: 1px solid var(--border-color-strong);
+  background: var(--bg-input);
+  flex-shrink: 0;
+}

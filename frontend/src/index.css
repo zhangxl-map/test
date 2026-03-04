@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Theme Variables ---- */
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fa;
+  --bg-chat: #f5f7fa;
+  --bg-sider: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #f5f7fa;
+  --bg-active: #e6f4ff;
+  --bg-icon: #f0f5ff;
+  --bg-code: #1e1e2e;
+  --bg-code-header: #313244;
+  --bg-chart: #ffffff;
+  --bg-toggle-btn: rgba(255, 255, 255, 0.15);
+  --bg-toggle-btn-hover: rgba(255, 255, 255, 0.25);
+
+  --text-primary: #1f1f1f;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --text-placeholder: #bbbbbb;
+
+  --border-color: #f0f0f0;
+  --border-color-strong: #e8e8e8;
+  --border-active: #91caff;
+
+  --bubble-user: #1677ff;
+  --bubble-user-text: #ffffff;
+  --bubble-ai: #ffffff;
+  --bubble-ai-text: #1f1f1f;
+  --bubble-ai-shadow: rgba(0, 0, 0, 0.06);
+
+  --header-gradient-start: #1677ff;
+  --header-gradient-end: #0958d9;
+
+  --icon-active: #1677ff;
+  --icon-active-bg: #1677ff;
+
+  --inline-code-bg: #f0f0f0;
+  --inline-code-color: #d63384;
+
+  --table-header-bg: #fafafa;
+
+  --scrollbar-thumb: #d9d9d9;
+  --scrollbar-thumb-hover: #bbbbbb;
+
+  --chart-toggle-bg: #fafafa;
+  --chart-toggle-bg-hover: #f0f0f0;
+
+  --session-delete-hover-bg: #fff1f0;
+  --session-delete-hover-color: #ff4d4f;
+
+  --db-section-bg: transparent;
+  --db-table-item-bg: #f9f9f9;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #141414;
+  --bg-secondary: #1f1f1f;
+  --bg-chat: #1a1a1a;
+  --bg-sider: #141414;
+  --bg-input: #1f1f1f;
+  --bg-hover: #262626;
+  --bg-active: #111d2c;
+  --bg-icon: #1a2332;
+  --bg-code: #0d1117;
+  --bg-code-header: #161b22;
+  --bg-chart: #1f1f1f;
+  --bg-toggle-btn: rgba(255, 255, 255, 0.12);
+  --bg-toggle-btn-hover: rgba(255, 255, 255, 0.2);
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #a0a0a0;
+  --text-muted: #707070;
+  --text-placeholder: #555555;
+
+  --border-color: #303030;
+  --border-color-strong: #404040;
+  --border-active: #1668dc;
+
+  --bubble-user: #1668dc;
+  --bubble-user-text: #ffffff;
+  --bubble-ai: #262626;
+  --bubble-ai-text: #e8e8e8;
+  --bubble-ai-shadow: rgba(0, 0, 0, 0.2);
+
+  --header-gradient-start: #1554ad;
+  --header-gradient-end: #0e3d7e;
+
+  --icon-active: #3c89e8;
+  --icon-active-bg: #1554ad;
+
+  --inline-code-bg: #2a2a2a;
+  --inline-code-color: #e57eb0;
+
+  --table-header-bg: #262626;
+
+  --scrollbar-thumb: #404040;
+  --scrollbar-thumb-hover: #555555;
+
+  --chart-toggle-bg: #262626;
+  --chart-toggle-bg-hover: #303030;
+
+  --session-delete-hover-bg: #2a1215;
+  --session-delete-hover-color: #ff4d4f;
+
+  --db-section-bg: #1a1a1a;
+  --db-table-item-bg: #262626;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
